@@ -1,0 +1,39 @@
+@authorization = Basic {{$dotenv USER}}:{{$dotenv PASS}}
+
+### Settings
+
+GET /settings
+Host: {{$dotenv HOST}}
+Authorization: {{authorization}}
+
+### States
+
+GET /states
+Host: {{$dotenv HOST}}
+Authorization: {{authorization}}
+
+### Configure
+
+GET /configure
+    ?blink={{$dotenv BLINK}}
+    &preserve={{$dotenv PRESERVE}}
+Host: {{$dotenv HOST}}
+Authorization: {{authorization}}
+
+### Control
+
+GET /control
+    ?relay={{$dotenv RELAY}}
+    &state={{$dotenv STATE}}
+Host: {{$dotenv HOST}}
+Authorization: {{authorization}}
+
+### Schedule
+
+GET /schedule
+    ?relay={{$dotenv RELAY}}
+    &state={{$dotenv STATE}}
+    &hours={{$dotenv HOURS}}
+    &minutes={{$dotenv MINUTES}}
+Host: {{$dotenv HOST}}
+Authorization: {{authorization}}

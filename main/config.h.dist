@@ -1,0 +1,8 @@
+#define AUTH_LOGIN "admin"
+#define AUTH_PASSWORD "password"
+
+#define WIFI_SSID ""
+#define WIFI_PASSWORD ""
+
+#define TIMEZONE 0
+#define LOW_TRIGGER true
