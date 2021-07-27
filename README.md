@@ -1,6 +1,10 @@
 # ESP8266 Relay Server
 
-Server for controlling relays on ESP8266 boards (supports NodeMCU and Wemos D1 mini). Uses D0-D8 pins (except D4).
+[![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=Arduino&logoColor=white)](https://www.arduino.cc)
+[![License](https://img.shields.io/github/license/BOOMER74/esp8266_relay_server?style=flat-square)](https://github.com/BOOMER74/esp8266_relay_server/blob/master/LICENSE)
+
+Server for controlling relays on ESP8266 boards (supports NodeMCU and Wemos D1 mini). Uses D0-D8 pins (except D4, cause
+used for state change indicator).
 
 ## Setup
 
